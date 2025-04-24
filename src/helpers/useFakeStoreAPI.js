@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const useFakeStoreAPI = () => {
-  const [products, setProducts] = useState(null);
+  const [products, setProducts] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
