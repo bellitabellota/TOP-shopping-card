@@ -1,5 +1,5 @@
 import { RouterProvider } from "react-router-dom";
-import router from "./routes";
+import createRouter from "./routes";
 import useFakeStoreAPI from "./helpers/useFakeStoreAPI";
 
 function App() {
@@ -8,6 +8,8 @@ function App() {
   if(loading) return <p>Products loading...</p>;
   if(error) return <p>{error.message}</p>;
 
+  const router = createRouter(products);
+ 
   return (
     <RouterProvider router={router} />
   )
