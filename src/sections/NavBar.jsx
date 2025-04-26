@@ -1,8 +1,11 @@
+import styles from "./NavBar.module.css"
+
 function NavBar() {
   return(
     <nav>
-      <p className="site-name">Live In Style</p>
-      <div>
+      <p className={styles.siteName}>Live In Style</p>
+      <div className={styles.cardIconContainer}>
+        <img src="public/shopping-bag-white-icon.png" alt="cart-icon" />
         <p>Cart</p>
       </div>
     </nav>
