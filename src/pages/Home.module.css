@@ -14,7 +14,7 @@ h1 {
 
 .productCard {
   border-radius: 15px;
-  box-shadow: 1px 1px 4px black;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.575);
   padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
@@ -41,9 +41,41 @@ img {
   text-overflow: ellipsis;
 }
 
+.cardFooter {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.quantityContainer {
+  display: flex;
+  justify-content: space-evenly;
+  }
+
+input {
+  width: 5rem;;
+  align-self: center;
+  padding: 0.6rem 0.5vw;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 1vw;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.397);
+  font-size: 1rem;
+}
+
+
+button {
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
 .productPrice {
   align-self: flex-end;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  margin-top: auto;
 }
