@@ -1,4 +1,5 @@
 import styles from "./NavBar.module.css"
+import { Link } from "react-router-dom";
 
 function NavBar({selectedProducts}) {
   const calculateQuantityCartItems = () => {
@@ -10,11 +11,11 @@ function NavBar({selectedProducts}) {
   return(
     <nav>
       <p className={styles.siteName}>Live In Style</p>
-      <div className={styles.cardIconContainer}>
+      <Link to="cart" className={styles.cardIconContainer}>
         <div className={styles.bubble}>{calculateQuantityCartItems()}</div>
         <img src="public/shopping-bag-white-icon.png" alt="cart-icon" />
         <p>Cart</p>
-      </div>
+      </Link>
     </nav>
   )
 }

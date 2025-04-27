@@ -1,7 +1,10 @@
 import styles from "./Home.module.css"
+import { useOutletContext } from "react-router-dom";
 
 
-function Home({products, addProductToCart}) {
+function Home() {
+  const [products, addProductToCart] = useOutletContext();
+
   const productCards = products.map((product) => {
     const onChangeHandler = (e) => {
       const inputField = document.querySelector("input:focus");

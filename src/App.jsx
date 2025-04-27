@@ -1,8 +1,9 @@
-import { RouterProvider } from "react-router-dom";
-import createRouter from "./routes";
+
+
 import useFakeStoreAPI from "./helpers/useFakeStoreAPI";
 import { useState } from "react";
 import NavBar from "./sections/NavBar";
+import { Outlet } from "react-router-dom";
 
 function App() {
   const [selectedProducts, setSelectedProducts] = useState([]);
@@ -31,12 +32,10 @@ function App() {
   if(loading) return <p>Products loading...</p>;
   if(error) return <p>{error.message}</p>;
   
-  const router = createRouter(products, addProductToCart);
-
   return (
     <>
-    <NavBar selectedProducts={selectedProducts} />
-    <RouterProvider router={router} />
+      <NavBar selectedProducts={selectedProducts} />
+      <Outlet context={[products, addProductToCart]}/>
     </>
 
   )

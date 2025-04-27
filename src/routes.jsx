@@ -1,14 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
+import App from "./App";
 
-function createRouter(products, addProductToCart) {
+function createRouter() {
   return createBrowserRouter([
     { path: "/",
-      element: <Home products={products} addProductToCart={addProductToCart} />
-    },
-    { path: "cart",
-      element: <Cart />
+      element: <App />,
+      children: [
+        {index: true, element: <Home />},
+        {path: "cart", element: <Cart />}
+      ]
     }
   ])
 }
