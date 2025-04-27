@@ -35,7 +35,7 @@ function App() {
   return (
     <>
       <NavBar selectedProducts={selectedProducts} />
-      <Outlet context={[products, addProductToCart]}/>
+      <Outlet context={[products, addProductToCart, selectedProducts]}/>
     </>
 
   )

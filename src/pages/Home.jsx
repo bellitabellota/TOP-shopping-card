@@ -32,9 +32,9 @@ function Home() {
   return (
     <>
       <h1>All Products</h1>
-      <main>
+      <div className={styles.cardsContainer}>
        {productCards}
-      </main>
+      </div>
     </>
   )
 }
