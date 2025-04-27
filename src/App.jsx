@@ -2,6 +2,7 @@ import { RouterProvider } from "react-router-dom";
 import createRouter from "./routes";
 import useFakeStoreAPI from "./helpers/useFakeStoreAPI";
 import { useState } from "react";
+import NavBar from "./sections/NavBar";
 
 function App() {
   const [selectedProducts, setSelectedProducts] = useState([]);
@@ -21,8 +22,6 @@ function App() {
         selectedProductsNew[index].quantity += quantityToAdd;
       }
 
-/*       console.log(selectedProductsNew); */
-
       return selectedProductsNew;
     });
   }
@@ -35,7 +34,11 @@ function App() {
   const router = createRouter(products, addProductToCart);
 
   return (
+    <>
+    <NavBar selectedProducts={selectedProducts} />
     <RouterProvider router={router} />
+    </>
+
   )
 }
 

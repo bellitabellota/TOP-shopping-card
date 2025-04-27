@@ -1,4 +1,3 @@
-import NavBar from "../sections/NavBar";
 import styles from "./Home.module.css"
 
 
@@ -29,7 +28,6 @@ function Home({products, addProductToCart}) {
 
   return (
     <>
-      <NavBar />
       <h1>All Products</h1>
       <main>
        {productCards}
