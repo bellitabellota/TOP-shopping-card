@@ -1,11 +1,10 @@
-import { createBrowserRouter } from "react-router-dom";
+
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import App from "./App";
 import ErrorPage from "./pages/ErrorPage";
 
-function createRouter() {
-  return createBrowserRouter([
+const routes = [
     { path: "/",
       element: <App />,
       children: [
@@ -14,7 +13,6 @@ function createRouter() {
       ],
       errorElement: <ErrorPage />
     }
-  ])
-}
+  ]
 
-export default createRouter;
+export default routes;
