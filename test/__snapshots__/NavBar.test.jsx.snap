@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`NavBar > renders the Navbar with an empty selectedProducts array and a mocked cart quantity of 0 1`] = `
+<div>
+  <nav>
+    <p
+      class="_siteName_df5b48"
+    >
+      Live In Style
+    </p>
+    <a
+      class="_cardIconContainer_df5b48"
+      data-discover="true"
+      href="/cart"
+    >
+      <div
+        class="_bubble_df5b48"
+      >
+        0
+      </div>
+      <img
+        alt="cart-icon"
+        src="shopping-bag-white-icon.png"
+      />
+      <p>
+        Cart
+      </p>
+    </a>
+  </nav>
+</div>
+`;
