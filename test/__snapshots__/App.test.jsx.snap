@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App > renders 'Products loading... when loading is true 1`] = `
+<div>
+  <p>
+    Products loading...
+  </p>
+</div>
+`;
