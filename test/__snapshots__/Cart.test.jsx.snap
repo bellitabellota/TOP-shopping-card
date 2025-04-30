@@ -1,0 +1,78 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Cart > renders a page with the selected product 1`] = `
+<div>
+  <h1>
+    Your cart
+  </h1>
+  <div
+    class="_selectedProductContainer_27e39d"
+  >
+    <div
+      class="_selectedProductContainerDescription_27e39d"
+    >
+      <p
+        class="_selectedProductTitleDescription_27e39d"
+      >
+        Product
+      </p>
+      <p
+        class="_selectedProductQuantityDescription_27e39d"
+      >
+        Quantity
+      </p>
+      <p
+        class="_selectedProductSubtotalDescription_27e39d"
+      >
+        Subtotal
+      </p>
+    </div>
+    <div
+      class="_selectedProduct_27e39d"
+    >
+      <p
+        class="_selectedProductTitle_27e39d"
+      >
+        Selected Products 1
+      </p>
+      <p
+        class="_selectedProductQuantity_27e39d"
+      >
+        2
+      </p>
+      <p
+        class="_selectedProductSubtotal_27e39d"
+      >
+        40
+         €
+      </p>
+    </div>
+    <div
+      class="_selectedProduct_27e39d"
+    >
+      <p
+        class="_selectedProductTitle_27e39d"
+      >
+        Selected Products 2
+      </p>
+      <p
+        class="_selectedProductQuantity_27e39d"
+      >
+        5
+      </p>
+      <p
+        class="_selectedProductSubtotal_27e39d"
+      >
+        50
+         €
+      </p>
+    </div>
+    <div
+      class="_totalAmount_27e39d"
+    >
+      Total: 
+      90
+    </div>
+  </div>
+</div>
+`;
