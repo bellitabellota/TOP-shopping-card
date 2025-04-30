@@ -2,6 +2,8 @@ import { render, screen } from "@testing-library/react";
 import App from "../src/App"
 import { describe, it, vi, expect } from "vitest";
 import useFakeStoreAPI from "../src/helpers/useFakeStoreAPI"; // this needs to be explicitly imported as I modify the mockReturnValue inside my test
+import { createMemoryRouter, RouterProvider } from "react-router-dom";
+import routes from "../src/routes";
 
 vi.mock("../src/helpers/useFakeStoreAPI", () => ({
   default: vi.fn()
@@ -18,5 +20,25 @@ describe("App", () => {
     useFakeStoreAPI.mockReturnValue({ products: [], error: new Error("server error"), loading: false });
     render(<App />)
     expect(screen.getByText("server error")).toBeInTheDocument();
+  })
+
+  it("renders the default page (Home) if useFakeStoreAPI returned products", () => {
+    const memoryRouter = createMemoryRouter(routes);
+    useFakeStoreAPI.mockReturnValue({ products: [{
+      id: 1,
+      title: "Test Product",
+      price: 109.95,
+      description: "The Test Product description ...",
+      category: "test products",
+      image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+      rating: {
+        rate: 3.9,
+        count: 120
+      }}], 
+      error: null, 
+      loading: false 
+    });
+    render(<RouterProvider router={memoryRouter} />);
+    expect(screen.getByText("All Products")).toBeInTheDocument();
   })
 })
