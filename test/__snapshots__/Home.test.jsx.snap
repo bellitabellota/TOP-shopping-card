@@ -1,0 +1,101 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Home > renders a list of products 1`] = `
+<div>
+  <h1>
+    All Products
+  </h1>
+  <div
+    class="_cardsContainer_4dfadf"
+  >
+    <div
+      class="_productCard_4dfadf"
+      data-product-id="1"
+    >
+      <img
+        alt="Test Product 1"
+        src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+      />
+      <div
+        class="_productText_4dfadf"
+      >
+        <div>
+          <h2>
+            Test Product 1
+          </h2>
+          <p
+            class="_productDescription_4dfadf"
+          >
+            The Test Product 1 description ...
+          </p>
+        </div>
+        <div
+          class="_cardFooter_4dfadf"
+        >
+          <div
+            class="_quantityContainer_4dfadf"
+          >
+            <input
+              type="number"
+              value="1"
+            />
+            <button>
+              Add To Cart
+            </button>
+          </div>
+          <p
+            class="_productPrice_4dfadf"
+          >
+            109.95
+             EUR
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="_productCard_4dfadf"
+      data-product-id="2"
+    >
+      <img
+        alt="Test Product 2"
+        src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+      />
+      <div
+        class="_productText_4dfadf"
+      >
+        <div>
+          <h2>
+            Test Product 2
+          </h2>
+          <p
+            class="_productDescription_4dfadf"
+          >
+            The Test Product 2 description ...
+          </p>
+        </div>
+        <div
+          class="_cardFooter_4dfadf"
+        >
+          <div
+            class="_quantityContainer_4dfadf"
+          >
+            <input
+              type="number"
+              value="1"
+            />
+            <button>
+              Add To Cart
+            </button>
+          </div>
+          <p
+            class="_productPrice_4dfadf"
+          >
+            22.3
+             EUR
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
