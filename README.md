@@ -1,12 +1,20 @@
-# React + Vite
+# Shopping Cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This React project is my implementation of TOP's [Shopping Card Project](https://www.theodinproject.com/lessons/react-new-shopping-cart).
 
-Currently, two official plugins are available:
+The aim was to apply the React concepts learned so far and get a first hands-on practice with :
+- testing a React Application
+- styling a React Application
+- using React Router
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To see the site live, click [here](https://bellitabellota-shopping-cart.netlify.app/).
 
-## Expanding the ESLint configuration
+The products are fetched via the FakeStoreAPI and Netifly was used as deployment provider.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Screenshot
+![image](https://github.com/user-attachments/assets/8545c48c-c3a8-4413-83a9-40445f444695)
+
+## Icon source
+
+Flaticon - [Shopping Bag by Abiyoga Pratama ](https://www.flaticon.com/free-icons/shopping-bag)
+
