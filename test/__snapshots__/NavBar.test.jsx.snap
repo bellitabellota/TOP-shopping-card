@@ -15,6 +15,7 @@ exports[`NavBar > renders the Navbar with an empty selectedProducts array and a 
     >
       <div
         class="_bubble_df5b48"
+        data-testid="cart-bubble"
       >
         0
       </div>

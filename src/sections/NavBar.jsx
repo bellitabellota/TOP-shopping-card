@@ -7,7 +7,7 @@ function NavBar({selectedProducts}) {
     <nav>
       <p className={styles.siteName}>Live In Style</p>
       <Link to="cart" className={styles.cardIconContainer}>
-        <div className={styles.bubble}>{calculateQuantityCartItems(selectedProducts)}</div>
+        <div data-testid="cart-bubble" className={styles.bubble}>{calculateQuantityCartItems(selectedProducts)}</div>
         <img src="shopping-bag-white-icon.png" alt="cart-icon" />
         <p>Cart</p>
       </Link>
